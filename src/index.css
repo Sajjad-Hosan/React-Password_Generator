@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    display: none;
+}
+input[type="range"]{
+    -webkit-appearance: none;
+    width: 80%;
+    height: 3.5px;
+    appearance: none;
+    border-radius: 5px;
+    background: #ff0000;
+    transform: translateX(40px);
+  }
+  input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background: #06ff;
+    border-radius: 50%;
+    cursor: pointer;
+  }

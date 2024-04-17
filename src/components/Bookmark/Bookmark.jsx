@@ -3,7 +3,7 @@ import Not from "../../layouts/Not/Not";
 const Bookmark = () => {
   return (
     <div>
-      <Not />
+      <Not/>
     </div>
   );
 };

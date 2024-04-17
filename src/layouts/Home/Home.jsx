@@ -5,6 +5,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../Auth/AuthProvider";
 import Setting from "../../components/SettingM/Setting";
 import Bookmark from "../../components/Bookmark/Bookmark";
+import About from "../../components/About/About";
 
 const Home = () => {
   const { generatePasswordRandom, password, length } = useContext(AuthContext);
@@ -77,6 +78,17 @@ const Home = () => {
         <dialog id="passwordType" className="modal">
           <div className="modal-box max-w-2xl">
             <PasswordType />
+            <div className="modal-action">
+              <form method="dialog">
+                <button className="btn px-8 btn-ghost">Close</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+        {/* 4rd modal */}
+        <dialog id="about" className="modal">
+          <div className="modal-box max-w-2xl">
+            <About />
             <div className="modal-action">
               <form method="dialog">
                 <button className="btn px-8 btn-ghost">Close</button>

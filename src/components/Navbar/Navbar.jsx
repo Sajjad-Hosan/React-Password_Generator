@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../Auth/AuthProvider";
 
 const Navbar = () => {
-  const { handlePasswordType, handleSetting, handleBookmark } =
+  const { handlePasswordType, handleSetting, handleBookmark, handleAbout } =
     useContext(AuthContext);
   return (
     <div>
@@ -42,9 +42,9 @@ const Navbar = () => {
         </li>
         <li className="tooltip" data-tip="About">
           {/* about */}
-          <NavLink to="/about">
+          <button onClickCapture={handleAbout}>
             <VscAccount />
-          </NavLink>
+          </button>
         </li>
       </ul>
     </div>

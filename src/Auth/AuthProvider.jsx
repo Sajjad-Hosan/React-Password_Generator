@@ -14,6 +14,7 @@ const AuthProvider = ({ children }) => {
   const handlePasswordType = () => document.getElementById("passwordType").showModal();
   const handleSetting = () => document.getElementById("setting").showModal();
   const handleBookmark = () => document.getElementById("bookmark").showModal();
+  const handleAbout = () => document.getElementById("about").showModal();
 
   const generatePassword = () => {
     let getPassword = "";
@@ -62,6 +63,7 @@ const AuthProvider = ({ children }) => {
     handlePasswordType,
     handleSetting,
     handleBookmark,
+    handleAbout,
     generatePasswordRandom,
     password,
     length,
